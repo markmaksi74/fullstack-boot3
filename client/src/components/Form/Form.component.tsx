@@ -17,12 +17,19 @@ export const Form: React.FC = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    saveInput()
+
     axios.get("http://localhost:4000/users").then(function () {
       // handle success
       console.log("done");
     });
     setSubmit(!!isValid);
+    
   };
+
+  const saveInput = (): string => {
+    return `hello from parent`;
+  }
 
   return (
     <>
@@ -33,7 +40,7 @@ export const Form: React.FC = () => {
       >
         {/* NOTE: I can submit the form with one <FormInput /> element but nothing happens when two are existed*/}
         {/* <FormInput labelName="First Name" /> */}
-        <FormInput labelName="Surname" />
+        <FormInput labelName="Surname" onSaveInput={saveInput} />
       </form>
     </>
   );

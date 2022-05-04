@@ -15,6 +15,7 @@ import {
 
 type InputProps = {
   labelName: string;
+  onSaveInput: Function // we'll use this function to lift the state up to the parent 
 }
 
 export const InputContext = createContext({});
@@ -39,6 +40,7 @@ export const FormInput: React.FC<InputProps> = (props: InputProps) => {
     const changed = { ...formValues, [name]: value }; // Spread the default state to preserve the values
     setFormValues(changed);
     setFormErrors(validate(changed));
+    props.onSaveInput('hi')
   };
 
   const validate = (formValues: FormValues): FormValuesErrors => {
