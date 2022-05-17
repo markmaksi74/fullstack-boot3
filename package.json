@@ -1,7 +1,7 @@
 {
-  "name": "fullstack-boot3",
+  "name": "pulls-boot-8-from-submission-with-frontend-and-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "react front end with nestjs backend and cypress testing",
   "main": "index.js",
   "scripts": {
     "e2e": "cypress open"
