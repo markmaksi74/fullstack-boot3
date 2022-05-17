@@ -1,0 +1,9 @@
+.greeting-message {
+  color: rgb(218, 25, 25);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 2rem;
+  
+  &--hidden {
+    display: none;
+  }
+}

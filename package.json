@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-boot3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markmaksi74/fullstack-boot3.git"
+  },
+  "author": "Mark Maksi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markmaksi74/fullstack-boot3/issues"
+  },
+  "homepage": "https://github.com/markmaksi74/fullstack-boot3#readme",
+  "dependencies": {
+    "cypress": "^9.6.1"
+  }
+}
